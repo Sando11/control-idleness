@@ -5,7 +5,7 @@ Esse é um modelo de coleta e análise de atividades e iterações na linha prod
 # Etapas realizadas do projeto
 Preparação dos dados:
 
-realizamos a instalação de camêras na fábrica, após isso realizamos a gravação dos videos e em seguida fizemos a coleta desse video. Pegamos o video e separamos por frame de imagens, e com essas imagens fizemos a segmentação através do 
+realizamos a instalação de cameras na fábrica, após isso realizamos a gravação dos videos e em seguida fizemos a coleta desse video. Pegamos o video e separamos por frame de imagens, e com essas imagens fizemos a segmentação através do 
 Label Studio (https://labelstud.io/guide/install). Aplicamos o model de segmentação do yoloV8 para a detecção dos "Operadores" segmentados.
 
 # Resultados esperados
