@@ -13,8 +13,6 @@ Label Studio (https://labelstud.io/guide/install). Aplicamos o model de segmenta
 Controles mais precisos do tempo de cada atividade exclusivamente.
 Controle do tempo de ociosidade.
 
-
-
 # Autor
 Natã Sando
 
