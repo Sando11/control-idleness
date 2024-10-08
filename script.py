@@ -4,7 +4,7 @@ import time
 
 model = YOLO("yolov8x-seg.pt")
 
-video_path = "caminho do seu video/video.mp4"
+video_path = "/home/sando/Área de Trabalho/Projetos Pessoais/projeto Unipac/videos-linha/new_video2024.mp4"
 cap = cv2.VideoCapture(video_path)
 
 if not cap.isOpened():
@@ -27,12 +27,12 @@ line_positions = [
 titles = ["Embalagem", "insp.Mont Final", "Estanqueidade", "Mtg.Parcial", 
           "Usi/S.Neck", "Usinagem", "Rebarbagem", "Aquecer inserto"]
 
-# <=direita  =>esquerda
+# <= vai p/direita  => vai p/esquerda
 title_x_positions = [205, 141, 125, 90, 93, 85, 120, int(frame_width * 1)]
-title_y_positions = [120, 120, 120, 120, 120, 120, 120, 120]
+title_y_positions = [110, 110, 110, 110, 110, 110, 110, 110]
 
 timer_x_positions = [135, 375, 515, 622, 719, 822, 940, 1100]
-timer_y_positions = [150, 150, 150, 150, 150, 150, 150, 150]
+timer_y_positions = [140, 140, 140, 140, 140, 140, 140, 140]
 # <=up    => down
 
 def draw_dashed_line(frame, start_point, end_point, color, thickness=10, dash_length=10):
@@ -130,15 +130,18 @@ while cap.isOpened():
         last_results = results[0].boxes[results[0].boxes.cls == 0]  
     frame_count += 1
 
+    
+
     if last_results is not None:
         inside_area = [False] * len(titles)
         for box in last_results:
             x1, y1, x2, y2 = box.xyxy[0].tolist()
             conf = box.conf[0]
             label = f"operador {conf:.2f}"
-
-            cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 0, 255), 2)
-            cv2.putText(frame, label, (int(x1), int(y1) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 0, 255), 2)
+            #retangulo da classificação
+            cv2.rectangle(frame, (int(x1), int(y1)), (int(x2), int(y2)), (0, 255, 255), 2)
+            #texto da classificação
+            cv2.putText(frame, label, (int(x1), int(y1) - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
 
             for i, pos in enumerate(line_positions):
                 if x1 < pos:
