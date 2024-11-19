@@ -1,5 +1,7 @@
 # Sobre o projeto
-Esse é um modelo de coleta e análise de atividades e iterações na linha produção através de um modelo de captura de imagens/vídeos. Que tem como objetivo  monitorar o tempo de ociosidade dos colaboradores, fazendo essa análise de eficiência de mão de obra entre atividades que agregam e não agregam valor, possibilitando sugestões de melhorias e agilizando o processo de otimização da linha de produção. OBS: Vale ressaltar que o objetivo deste projeto NÃO é "vigiar" ou "monitorar" quem trabalha ou deixa de trabalhar, como forma de punição, mas sim para um controle de média de tempo que cada atividade leva para ser feita, para um melhor gerenciamento de tempo e economia de dinheiro.
+Esse é um modelo de coleta e análise de atividades e iterações na linha produção através de um modelo de captura de imagens/vídeos. Que tem como objetivo  monitorar o tempo de ociosidade dos colaboradores, fazendo essa análise de eficiência de mão de obra entre atividades que agregam e não agregam valor, possibilitando sugestões de melhorias e agilizando o processo de otimização da linha de produção. 
+
+OBS: Vale ressaltar que o objetivo deste projeto NÃO é "vigiar" ou "monitorar" quem trabalha ou deixa de trabalhar, como forma de punição, mas sim para um controle de média de tempo que cada atividade leva para ser feita, para um melhor gerenciamento de tempo e economia de dinheiro.
 
 
 # Etapas realizadas do projeto
